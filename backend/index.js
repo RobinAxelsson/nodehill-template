@@ -3,9 +3,10 @@ const express = require('express');
 const server = express();
 server.listen(4000, () => console.log('Backend running on port 4000.'));
 
-// test route to see that the vite proxy to backend works
-server.get('/api/hello', (req, res) => {
-  res.json({ message: 'Hello from the backend! I think the world is wonderful too!' });
+// route returningn mock product data
+const mockProducts = require('./mock-products.json');
+server.get('/api/products', (req, res) => {
+  res.json(mockProducts);
 });
 
 // serve the built project (the dist folder)

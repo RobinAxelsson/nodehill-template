@@ -1,0 +1,13 @@
+// Make sure the body never has a height below the whole window height
+// and that it is using flex as it's display type
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+// Let main occupy all vertical space in the body
+// that is not taken by other elements;
+#root main {
+  flex: 1;
+}

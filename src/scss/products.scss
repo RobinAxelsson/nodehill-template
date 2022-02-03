@@ -1,0 +1,23 @@
+.product-in-list {
+  color: black;
+  position: relative;
+}
+
+.product-in-list .description {
+  height: 110px;
+}
+
+.product-in-list h5 {
+  max-height: 28px;
+  overflow: hidden;
+}
+
+/* fix for setting correct height before img  has loaded */
+.product-in-list {
+  padding-top: 56.25%; /* height in percentage of width */
+}
+.product-in-list img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}

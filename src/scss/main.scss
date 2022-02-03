@@ -1,0 +1,16 @@
+// Fonts from Google fonts
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+// Variable overrides for Bootstrap
+// (see node_modules/bootstrap/scss/_variables.scss
+$body-bg: black;
+$body-color: white;
+$headings-font-family: 'Lato';
+$font-family-base: 'Merriweather';
+
+// Import Bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// Import our own styling (could be several different files)
+@import 'sticky-footer';
+@import 'products';
